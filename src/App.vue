@@ -1,5 +1,7 @@
 <template>
-  <div id="app">
+  <div>
+
+    <h1>TODO list)</h1>
     
   </div>
 </template>
@@ -9,7 +11,9 @@
 
 export default {
   name: 'App',
-  
+
+   
+
 }
 </script>
 
