@@ -1,7 +1,7 @@
 <template>
   <div>
-      <input type="text">
-      <button>Add</button>
+     <span></span>
+     <button>Delete</button>
   </div>
 </template>
 
