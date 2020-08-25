@@ -34,7 +34,8 @@ export default {
       console.log(this.arrayTodoList)
     },
     deleteTodo(event){
-      this.arrayTodoList.splice(event,1)
+      const idx = this.arrayTodoList.findIndex(e => e === event);
+      this.arrayTodoList.splice(idx, 1)
     }
   }
 }
