@@ -4,7 +4,9 @@
     
   <AddTodo @pushToArray="pushToArray"/>
 
-  <TodoList :arrayTodoList="arrayTodoList"/>
+  <TodoList :arrayTodoList="arrayTodoList"
+            @deleteTodo="deleteTodo"
+  />
 
   </div>
 </template>
@@ -30,6 +32,9 @@ export default {
     pushToArray(event){
       this.arrayTodoList.push(event)
       console.log(this.arrayTodoList)
+    },
+    deleteTodo(event){
+      this.arrayTodoList.splice(event,1)
     }
   }
 }

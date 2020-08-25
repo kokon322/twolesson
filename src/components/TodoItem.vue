@@ -3,7 +3,7 @@
       
      <span>{{item}}</span>
 
-     <button>Delete</button>
+     <button @click="deleteTodo">Delete</button>
      
   </div>
 </template>
@@ -16,7 +16,11 @@ props:{
         type: String
     }
 },
-
+methods:{
+    deleteTodo(){
+        this.$emit('deleteTodo',this.item)
+    }
+}
     
    
 }

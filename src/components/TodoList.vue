@@ -6,7 +6,7 @@
       >
            
      <TodoItem :item="item"
-                  
+                @deleteTodo="deleteTodo"                  
 />
 
   </div></div>
@@ -27,7 +27,12 @@ export default {
     components: {
         TodoItem
     },
-   
+    methods: {
+        deleteTodo(){
+            this.$emit('deleteTodo', this.event)
+        }
+   }
+        
     }
 
    
