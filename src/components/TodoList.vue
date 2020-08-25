@@ -28,8 +28,8 @@ export default {
         TodoItem
     },
     methods: {
-        deleteTodo(){
-            this.$emit('deleteTodo', this.event)
+        deleteTodo(event){
+            this.$emit('deleteTodo', event)
         }
    }
         
